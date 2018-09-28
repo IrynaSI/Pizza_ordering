@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+	<title>Pizza ordering</title>
+	<link href="style.css" rel="stylesheet">
+	<script type="text/javascript" src="main.js"></script>
+
+</head>
+<body>	
+<div class="container" id="container" name="container">
+<h1> Create Your Own Pizza!!!</h1>
+<hr/>
+<form  name="pizzaInfo" class="pizzaInfo">
+	<p><span style="font-weight: bold;">Step №1 -</span> select pizza size:</p>
+    <div class="Div" id=radioDiv>
+	<input type="radio" name="PizzaRadio" id="Big" value="90"/>big<br/> 
+	<input type="radio" name="PizzaRadio" id="Middle" value="70" />middle<br/>
+	<input type="radio" name="PizzaRadio" id="Small" value="50" />small<br/>
+    </div>
+
+	<p><span style="font-weight: bold;">Step №2 -</span> select pizza filling:</p>
+    <div class="Div" id=checkboxDiv>
+     <input type="checkbox" name="filling" id="PizzaCheckboxBacon" value="images/бекон.png+25+bacon" />bacon<br/>
+     <input type="checkbox" name="filling" id="PizzaCheckboxMushrooms" value="images/грибы.png+20+mushrooms" />mushrooms<br/>
+     <input type="checkbox" name="filling" id="PizzaCheckboxSausages" value="images/колбаски.png+30+sausages" />sausages<br/>
+     <input type="checkbox" name="filling" id="PizzaCheckboxOlives" value="images/оливки.png+20+olives" />olives<br/>
+     <input type="checkbox" name="filling" id="PizzaCheckboxSpices" value="images/специи.png+10+spice" />spices<br/>
+     <input type="checkbox" name="filling" id="PizzaCheckboxCheese" value="images/сыр.png+25+cheese" />cheese<br/>
+ </div>
+     <p><span style="font-weight: bold;">Step №3 -</span> input your contacts:</p>
+     Name: 
+     <input type="text" class="input" name="userName" value="" placeholder="Name" style="margin: 0px 0px 0px 18px" 
+     		data-val="[а-яА-Я]+"
+            data-val-msg="correct example: Name"
+            data-val-msg-id="userNameMSg"/>
+     <span id="userNameMSg" style="bottom: 205px">please input correct surname</span>
+     <br/>
+     Surname: 
+     <input type="text" class="input" name="userSurmane" value="" placeholder="Surname" 
+             data-val="[а-яА-Я]+"
+             data-val-msg="correct example: Surname"
+             data-val-msg-id="userSurnameMSg"/>
+        <span id="userSurnameMSg" style="bottom: 185px">please input correct surname</span>
+     <br/>
+     Phone: 
+     <input type="text" class="input" name="userPhone" value="" placeholder="000-000-00-00" style="margin: 0px 0px 0px 17px"
+            data-val="\d{3}-\d{3}-\d{2}-\d{2}"
+            data-val-msg="correct example: 000-000-00-00"
+            data-val-msg-id="userPhoneMSg"/>
+      <span  id="userPhoneMSg" style="bottom: 165px">please input correct phone</span>
+     <br/>
+     City: 
+     <input autocomplete="off" list="city" class="input" name="userCity" value="" placeholder="start to enter city" style="margin: 0px 0px 0px 29px"        data-val="\S"
+             data-val-msg="please select city from the list"
+             data-val-msg-id="userCityMSg" />
+      <span id="userCityMSg" style="bottom: 145px">please select city from the list</span>
+      <datalist id="city">
+                    <option> Вінниця‎ </option>
+                    <option> Житомир‎ </option>
+                    <option> Запоріжжя‎ </option>
+                    <option> Київ‎ </option>
+                    <option> Луцьк‎ </option>
+                    <option> Львів‎ </option>
+                    <option> Миколаїв‎ </option>
+                    <option> Одеса‎ </option>
+                    <option> Полтава‎ </option>
+                    <option> Рівне‎ </option>
+                    <option> Суми‎ </option>
+                    <option> Тернопіль‎ </option>
+                    <option> Ужгород‎ </option>
+                    <option> Харків‎ </option>
+                    <option> Херсон‎ </option>
+                    <option> Хмельницький‎ </option>
+                    <option> Черкаси‎ </option>
+                    <option> Чернівці‎ </option>
+                    <option> Чернігів‎ </option>
+      </datalist>
+     <br/>
+     Street:
+     <input type="text" class="input"  name="userStreet" value="" placeholder="street" style="margin: 0px 0px 0px 20px"
+             data-val="[а-яА-Я]+"
+             data-val-msg="correct example: street"
+             data-val-msg-id="userStreetMSg"/>
+     <span  id="userStreetMSg" style="bottom: 125px" >please input correct street</span>
+     <br/>
+     House №  
+     <input type="text" class="input" name="userHouse" value="" placeholder="11a" style="margin: 0px 0px 0px 1px"
+             data-val="\d{1,2}[a-яA-Я]?"
+             data-val-msg="correct example: 11a"
+             data-val-msg-id="userHouseMSg"/>
+     <span id="userHouseMSg"  style="bottom: 107px">please input correct house №</span>
+     <br/>
+     Flat № 
+     <input type="text"  class="input" name="userFlat" value="" placeholder="11" style="margin: 0px 0px 0px 17px"
+             data-val="\d{1,4}"
+             data-val-msg="correct example: 1111"
+             data-val-msg-id="userFlatMSg"/>
+      <span  id="userFlatMSg" style="bottom: 90px">please input correct flat №</span><br/><br/><br/>
+     <hr style="width: 798px; position: relative; right: 15px;" />
+     <input type="button" class="submit" name="submit" id="submit" value="Create Order">
+     <input type="submit" id="ok" class="ok" value="Confirm "/ >
+     <input type="button" id="cancel" class="cancel" value="Cancel"/ >
+</form>
+<div class="pizzaImages" >
+	<img name="pizzaImg" id="base" src="images/основа.png">
+	<img name="pizzaImg" id="bacon" value="25" style="display: none;" src="images/бекон.png">
+	<img name="pizzaImg" id="mushrooms" value="20" style="display: none;" src="images/грибы.png">
+	<img name="pizzaImg" id="sausages" value="30" style="display: none;" src="images/колбаски.png">
+	<img name="pizzaImg" id="olives" value="20" style="display: none;" src="images/оливки.png">
+	<img name="pizzaImg" id="spices" value="10" style="display: none;" src="images/специи.png">
+	<img name="pizzaImg" id="cheese" value="25" style="display: none;" src="images/сыр.png">
+	<div class="price">
+		<div class="title">Price: </div>
+		<div class="prc" id="prc" style="font-weight: bold;">0</div>
+		<div class="currency">hrn.</div>
+	</div>
+	<div class="order" id="order" ><p>Your order</p>
+		<div class="orderContent" id="orderContent" ></div>	
+	</div>
+</div>
+<!-- <form>
+ <input type="text"  name="ira" value="" placeholder="11" style="margin: 0px 0px 0px 17px"/>	
+ <input type="submit" value="ok" > 
+ <form/> -->
+</div>
+</body>
+</html>

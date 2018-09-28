@@ -1,0 +1,148 @@
+body{
+	background-image:url(images/background.jpg); 
+	background-repeat: repeat;
+}
+
+.container{
+	position: relative;
+	margin: 0 auto;
+	z-index: 10;
+	bottom: 8px;
+	width: 800px;
+	height: 700px;
+    color:black;
+    text-align: center;
+    border: solid 1px #e0d2d7;
+    opacity: 0.9;
+    background: #e0d2d7;
+}
+.pizzaInfo{
+  position: relative;
+  border:solid 1px red;
+  border:none;
+  width: 413px;
+  text-align: left;
+  padding: 0px 0px 0px 15px;
+  float: left;
+}
+.pizzaInfo>span{
+	color:red;
+	/*border:solid 1px black;*/
+	position: absolute;
+	left: 217px;
+	display: none;
+}
+.pizzaImages{
+	position: relative;
+    border: solid 1px blue;
+    border:none;
+    float: left;
+    margin: 0px 0px 0px 20px;
+    width: 350px;
+    height: 320px;
+    right: 20px;
+}
+.pizzaImages>img{
+	position: absolute;
+    width: 330px;
+    height: 330px;
+    left: 20px;
+    bottom:20px;
+}
+.input{
+	width: 130px;
+}
+.price{
+	position: relative;
+	top:350px;
+	font-size: 25px;
+	border: solid 1px blue;
+	border-radius: 7px;
+	width: 150px;
+	left: 100px;
+	height: 28px;
+	/*text-align: left;*/
+	padding: 0px 5px 0px 15px;
+}
+.title{
+	position: relative;
+	text-align: left;
+	float: left;
+	width: 60px;
+	height: 28px;
+	right: 8px;
+}
+.prc{
+	position: relative;
+	float: left;
+	text-align: center;
+	width: 40px;
+	height: 28px;
+}
+.currency{
+	position: relative;
+	float: left;
+	text-align: right;
+	width: 30px;
+	height: 28px;
+	left: 10px;
+}
+.submit{
+	position: relative;
+    cursor: pointer;
+    border: solid 2px #80726d;
+    font-size: 23px;
+    border-radius: 9px;
+    background: #c4c2c1;
+    width: 210px;
+    height: 35px;
+    left: 290px;
+    top:10px;
+    font-weight: bold;
+    outline: none;
+}
+.submit:hover{
+	background: #ad9a94;
+}
+.submit:active{
+    background: #85756f;
+}
+.valid{border: solid 1px green;
+	width: 132px;
+}
+
+.invalid{
+	border: solid 1px red;
+	width: 132px;
+}
+.order{
+	position: absolute;
+	width: 300px;
+	height: 205px;
+	border:solid 1px blue;
+	right:230px;
+	background: #c4c2c1;
+	color:black;
+	font-weight: bold;
+	display: none;
+}
+.ok{
+	position: absolute;
+	z-index: 20;
+	bottom: 500px;
+	left: 478px;
+	display: none;
+}
+.cancel{
+	position: absolute;
+	z-index: 20;
+	bottom: 500px;
+	left: 250px;
+	display: none;
+}
+.Div{
+	width: 300px;
+}
+
+
+
